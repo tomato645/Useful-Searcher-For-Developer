@@ -27,32 +27,10 @@
 
       <div class="mt-3 mb-2 bg-info text-dark" id=search_word style="font-size:35px;">検索するワード「」</div>
     </div>
+    
+    <a href="http://emc2games.starfree.jp">HOME</a>
 
-    <script>
-      const engine = "https://google.com/search?q=";
-      const space = "+"
-      const input = document.querySelector(".inputs");
-
-      function show() {
-        fixed = document.getElementById("fixed").value; // 固定する言葉
-        added = document.getElementById("added").value; // 変化する言葉
-
-        // URLの作成
-        // TODO: 検索エンジン選択追加
-        URL = engine + fixed + space + added;
-
-        // htmlを書き換え
-        var target = document.getElementById("result");
-        result.href = URL;
-        result.innerText = "検索結果をみる";
-
-        var search_word = fixed + " " + added;
-        document.getElementById("search_word").innerHTML = "検索するワード「" + search_word + "」";
-      }
-
-      fixed.addEventListener("input", show, false);
-      added.addEventListener("input", show, false);
-    </script>
+    <script src="script.js" charset="utf-8"></script>
 
     <!-- admax -->
     <div class="admax-ads" data-admax-id="8f394eb173a6931d3aa1ebbd554e87f9" style="display:inline-block;width:728px;height:90px;"></div>
